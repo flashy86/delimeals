@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables
+
 import 'package:flutter/material.dart';
 
 import '../models/meal.dart';
@@ -21,13 +23,13 @@ class MealItem extends StatelessWidget {
 
   String get complexityText {
     switch (complexity) {
-      case Complexity.Simple:
+      case Complexity.simple:
         return 'Simple';
         break;
-      case Complexity.Challenging:
+      case Complexity.challenging:
         return 'Challenging';
         break;
-      case Complexity.Hard:
+      case Complexity.hard:
         return 'Hard';
         break;
       default:
@@ -37,13 +39,13 @@ class MealItem extends StatelessWidget {
 
   String get affordabilityText {
     switch (affordability) {
-      case Affordability.Affordable:
+      case Affordability.affordable:
         return 'Affordable';
         break;
-      case Affordability.Pricey:
+      case Affordability.pricey:
         return 'Pricey';
         break;
-      case Affordability.Luxurious:
+      case Affordability.luxurious:
         return 'Expensive';
         break;
       default:
